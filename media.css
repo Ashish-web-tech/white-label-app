@@ -1,0 +1,27 @@
+@media screen and (max-width: 450px){
+    
+    #adv-h2{
+        font-size: 12vw;
+    }
+}
+
+@media screen and (max-width: 769px){
+
+    #get-start{
+        display: none;
+    }
+
+    #bar{
+        display: block;
+    }
+    
+    nav{
+        display: none;
+    }
+
+
+    #heading-h1{
+        font-size: 5vw;
+    }
+}
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White-Label Self-Rent App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="media.css">
+
+</head>
+
+<body class="text-gray-100 bg-gray-600">
+    <header class="bg-opacity-90 bg-gray-900 text-white py-4 px-6 flex justify-between items-center shadow-lg border-b-4 border-yellow-500">
+        <h1 id="heading-h1" class="text-4xl font-extrabold text-yellow-400">🚗 Self-Rent App</h1>
+        <nav>
+            <ul class="flex gap-6">
+                <li><a href="#about" class="hover:text-yellow-400 font-bold">About Us</a></li>
+                <li><a href="#features" class="hover:text-yellow-400 font-bold">Features</a></li>
+                <li><a href="#pricing" class="hover:text-yellow-400 font-bold">Pricing</a></li>
+                <li><a href="#contact" class="hover:text-yellow-400 font-bold">Contact</a></li>
+            </ul>
+        </nav>
+        <a id="get-start" href="#pricing" class="bg-yellow-500 text-gray-900 px-5 py-2 rounded-full font-bold shadow-lg hover:bg-yellow-600">🚀 Get Started</a>
+        <img id="bar" src="img/bars-solid.svg" alt="" class="bg-yellow-500 text-gray-900 px-5 py-2 rounded-full font-bold shadow-lg hover:bg-yellow-600 hidden">
+    </header>
+
+
+    <!-- bar functions -->
+
+    <div id="bar-fn" class="h-[50px] flex justify-center w-full bg-gray-600 bg-opacity-950 z-40 absolute right-0 hidden">
+        <ul class="flex justify-around items-center gap-6">
+            <li><a href="#about" class="hover:text-yellow-400 font-bold">About Us</a></li>
+            <li><a href="#features" class="hover:text-yellow-400 font-bold">Features</a></li>
+            <li><a href="#pricing" class="hover:text-yellow-400 font-bold">Pricing</a></li>
+            <li><a href="#contact" class="hover:text-yellow-400 font-bold">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="relative text-center py-20 bg-cover bg-center" style="background-image: url('img/bg.png');">
+        <div class="bg-black bg-opacity-70 py-16 px-6">
+            <h2 id="adv-h2" class="text-5xl font-extrabold text-yellow-400">Struggling with self-rent business challenges?</h2>
+            <p class="mt-4 text-xl text-gray-300">Our White-Label Self-Rent App Solves It All! 🚘✨</p>
+            <a href="#pricing" class="mt-6 inline-block bg-yellow-500 text-gray-900 px-6 py-3 rounded-full font-bold shadow-lg hover:bg-yellow-600">🔥 Subscribe Now</a>
+        </div>
+    </section>
+
+    <!-- about us -->
+
+    <section id="about" class="py-16 px-6 bg-gray-900 text-center shadow-lg">
+        <h2 class="text-4xl font-extrabold text-yellow-400 mb-8">🏢 About Us</h2>
+        <p class="text-gray-300 max-w-3xl mx-auto text-lg">We are a cutting-edge technology company revolutionizing the self-rental business. Our White-Label Self-Rent App provides seamless solutions for vehicle rental businesses, ensuring secure transactions, automated processes, and real-time tracking. 🚀</p>
+    </section>
+
+
+    <!-- features -->
+
+    <section id="features" class="py-16 px-6 bg-gray-900 text-center">
+        <h2 class="text-4xl font-extrabold text-yellow-400 mb-8">🚀 Key Features</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-gray-800 p-6 rounded-lg text-center shadow-md hover:bg-gray-700 transition">
+                <img src="img/auto.jpg" alt="Car" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="font-bold text-xl text-yellow-400">Automated Extensions</h3>
+                <p class="mt-2 text-gray-300">No more unpaid extensions! ⏳</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg text-center shadow-md hover:bg-gray-700 transition">
+                <img src="img/verify.jpg" alt="Car" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="font-bold text-xl text-yellow-400">Secure ID Verification</h3>
+                <p class="mt-2 text-gray-300">Verify users before rentals. 🔒</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg text-center shadow-md hover:bg-gray-700 transition">
+                <img src="img/dpay.jpg" alt="Car" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="font-bold text-xl text-yellow-400">Digital Payments</h3>
+                <p class="mt-2 text-gray-300">Seamless transactions! 💳</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg text-center shadow-md hover:bg-gray-700 transition">
+                <img src="img/gps.jpg" alt="Car" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="font-bold text-xl text-yellow-400">GPS Tracking</h3>
+                <p class="mt-2 text-gray-300">Real-time tracking! 📍</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- pricing -->
+
+    <section id="pricing" class="py-16 px-6 bg-gray-900 text-center">
+        <h2 class="text-4xl font-extrabold text-yellow-400 mb-8">💰 Pricing</h2>
+        <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:bg-gray-700 transition">
+                <h3 class="font-bold text-xl text-yellow-400">Monthly Plan</h3>
+                <p class="text-gray-300 mt-2">₹3,750/month</p>
+                <a href="#contact" class="mt-4 inline-block bg-yellow-500 text-gray-900 px-6 py-3 rounded-full font-bold hover:bg-yellow-600">🚀 Subscribe</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:bg-gray-700 transition">
+                <h3 class="font-bold text-xl text-yellow-400">Annual Plan</h3>
+                <p class="text-gray-300 mt-2">₹45,000/year</p>
+                <a href="#contact" class="mt-4 inline-block bg-yellow-500 text-gray-900 px-6 py-3 rounded-full font-bold hover:bg-yellow-600">🔥 Subscribe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+
+    <section id="contact" class="py-16 px-6 bg-gray-900 text-center">
+        <h2 class="text-4xl font-extrabold text-yellow-400 mb-8">📞 Contact Us</h2>
+        <form class="max-w-lg mx-auto">
+            <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg mb-4 bg-gray-800 text-white">
+            <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg mb-4 bg-gray-800 text-white">
+            <textarea placeholder="Your Message" class="w-full p-3 border rounded-lg mb-4 bg-gray-800 text-white"></textarea>
+            <button type="submit" class="bg-yellow-500 text-gray-900 px-6 py-3 rounded-full font-bold hover:bg-yellow-600">Send Message</button>
+        </form>
+    </section>
+
+
+    <!-- footer -->
+
+
+    <footer class="bg-gray-900 text-white text-center py-6 mt-8">
+        <p class="text-gray-300">&copy; 2025 Self-Rent App. All rights reserved. 🚗💨</p>
+    </footer>
+</body>
+
+<script>
+    const barFn = document.querySelector('#bar-fn')
+    const bar = document.querySelector('#bar')
+
+
+    bar.addEventListener('click',()=>{
+        barFn.classList.toggle('hidden')
+    })
+
+</script>
+</html>
